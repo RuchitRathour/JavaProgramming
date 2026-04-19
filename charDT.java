@@ -5,5 +5,6 @@ public class charDT {
         char grade = 'A';
         char mathgrade = 'B';
         System.out.println(grade);
+        Sustem.out.println(mathgrade);
     }
 }
