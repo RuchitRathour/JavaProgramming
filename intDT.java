@@ -5,5 +5,6 @@ public class intDT {
         int age = 20;
         int rollno = 70;
         System.out.println(age);
+        System.out.println(rollno);
     }
 }
