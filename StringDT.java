@@ -9,5 +9,6 @@ public class StringDT {
         String name5 = "Ram";
         System.out.println(name);
         System.out.println(name2);
+        System.out.println(name3);
     }
 }
