@@ -1,33 +1,29 @@
-package Hash.HashSet;
+package Hash.HashMap;
 
-import java.util.HashSet;
+import java.util.HashMap;
 
 public class main {
     public static void main(String[] args) {
-        // Creating
-        HashSet<Integer> set = new HashSet<>();
+        HashMap<Integer, String> map = new HashMap<>();
 
-        // Insert
-        set.add(1);
-        set.add(2);
-        set.add(3);
-        set.add(4);
-        System.out.println(set);
-        // size
-        System.out.println("size of set is : " + set.size());
+        // Adding elements
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Mango");
+        System.out.println(map);
 
-        //Search
-        if(set.contains(1)){
-            System.out.println("set contains 1");
-        }
-        if(!set.contains(6)){
-            System.out.println("does not contain 6");
-        }
+        // Accessing elements
+        System.out.println(map.get(2)); // Banana
 
-        // Delete
-        set.remove(1);
-        if(!set.contains(1)){
-            System.out.println("does not contain 1");
-        }
+        // Removing elements
+        map.remove(1);
+        System.out.println(map);
+
+        // Checking keys/values
+        System.out.println(map.containsKey(2));  // true
+        System.out.println(map.containsValue("Apple")); // false
+
+        // Size of HashMap
+        System.out.println(map.size());
     }
 }
