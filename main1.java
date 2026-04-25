@@ -1,22 +1,19 @@
-package Hash.HashSet;
+package Hash.HashMap;
 
-import java.util.HashSet;
+import java.util.HashMap;
 
 public class main1 {
     public static void main(String[] args) {
-        HashSet<Integer> numbers = new HashSet<>();
+        // 2. entrySet() se iteration (BEST method ⭐)
+        HashMap<Integer, String> map = new HashMap<>();
 
-        numbers.add(10);
-        numbers.add(20);
-        numbers.add(30);
-        numbers.add(10); // duplicate
+        // Adding elements
+        map.put(1, "Apple");
+        map.put(2, "Banana");
+        map.put(3, "Mango");
 
-        System.out.println("HashSet: " + numbers);
-
-
-        // Iterating Through HashSet
-        for (int num : numbers) {
-            System.out.println(num);
+        for (HashMap.Entry<Integer, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
     }
 }
