@@ -6,7 +6,6 @@ public class StringDT {
         String name2 = "Kumar";
         String name3 = "Rohit";
         String name4 = "Rohan";
-        String name5 = "Ram";
         System.out.println(name);
         System.out.println(name2);
         System.out.println(name3);
