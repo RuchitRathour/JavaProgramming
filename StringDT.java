@@ -10,6 +10,5 @@ public class StringDT {
         System.out.println(name);
         System.out.println(name2);
         System.out.println(name3);
-        System.out.println(name4);
     }
 }
